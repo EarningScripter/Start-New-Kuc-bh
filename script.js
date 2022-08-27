@@ -11,13 +11,13 @@ coin.addEventListener("click", function () {
     let result;
 
     if (toss == 1) {
-        result = "dragon";
-        coin.src = "images/dragon.png"
+        result = "Dragon";
+        coin.src = "images/Dragon.jpg"
     } else {
-        coin.src = "images/tiger.png"
-        result = "tiger";
+        coin.src = "images/Tiger.jpg"
+        result = "Tiger";
     }
-    tossResult.innerHTML = `It's ${result}.`
+    tossResult.innerHTML = ` ${result}`
     flip.innerHTML = `<button id="flip-again-btn">Start Again</button>`
     flip.addEventListener("click", flipAgain);
 });
